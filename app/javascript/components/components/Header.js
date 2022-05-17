@@ -14,8 +14,16 @@ class Header extends Component {
     console.log("current_user:", current_user)
     return (
       <>
-        <h1>React in Rails with Devise</h1>
-        <Nav>
+        
+        <Nav> 
+          <NavItem>
+              <a href={"/"} className="nav-link">Apartments</a>
+            </NavItem>
+
+            <NavItem>
+              <a href={"/apartmentindex"} className="nav-link">Apartment Showcase</a>
+            </NavItem>
+
           {logged_in &&
             <NavItem>
               <a href={sign_out_route} className="nav-link">Sign Out</a>
