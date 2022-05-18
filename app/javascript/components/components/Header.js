@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom'
 import { Nav, NavItem } from 'reactstrap'
 
 class Header extends Component {
@@ -17,11 +18,15 @@ class Header extends Component {
         
         <Nav> 
           <NavItem>
-              <a href={"/"} className="nav-link">Apartments</a>
+              <NavLink to={"/"} className="nav-link">
+                Apartments
+              </NavLink>
             </NavItem>
 
             <NavItem>
-              <a href={"/apartmentindex"} className="nav-link">Apartment Showcase</a>
+              <NavLink to={"/apartmentindex"} className="nav-link">
+                Apartment Showcase
+              </NavLink>
             </NavItem>
 
           {logged_in &&
