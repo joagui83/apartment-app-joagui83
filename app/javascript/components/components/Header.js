@@ -19,7 +19,7 @@ class Header extends Component {
         <Nav> 
           <NavItem>
               <NavLink to={"/"} className="nav-link">
-                Apartments
+                Jose's Apartments
               </NavLink>
             </NavItem>
 
